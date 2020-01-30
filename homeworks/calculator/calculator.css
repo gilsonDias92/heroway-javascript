@@ -33,6 +33,12 @@ p, h1 {
 	width: 90%;
 }
 
+p {
+	margin-top: 2rem;
+	border: dashed #3bbf55 2px;
+	height: 5rem;
+}
+
 button:hover {
 	background-color: #3bbf55;
 	color: white;

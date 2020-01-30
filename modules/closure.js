@@ -1,11 +1,12 @@
-function sum(a, b) {
+/*
+  function sum(a, b) {
     return a + b;
   }
   
   var resultSum = sum(10, 20);
   console.log(resultSum);
   
-  /* ----- */
+  
   
   // EXEMPLO 1
   function sum2(a) {
@@ -20,7 +21,7 @@ function sum(a, b) {
   var result2 = sumAgain(20);
   console.log(result2);
   
-  /* ----- */
+ 
   
   // EXEMPLO 2
   function iniciar(number) {
@@ -37,7 +38,6 @@ function sum(a, b) {
   var plus10 = contador(10);
   console.log(plus10);
   
-  /* ----- */
   
   // EXEMPLO 3 / metodos privados
   function counter() {
@@ -51,7 +51,6 @@ function sum(a, b) {
       }
   }
   
-  /* ----- */
   
   // EXEMPLO 4 - COMPLEXO!
   
@@ -80,4 +79,35 @@ function sum(a, b) {
   
   console.log(result);
   
-  // SET INTERVAL / ARRAY.MAP || ARRAY.FILTER, ETC
+  // SET INTERVAL / ARRAY.MAP || ARRAY.FILTER, ETC */
+
+  /*--------------------------------------------*/
+
+  // console.clear();
+  // function sum(a, b){
+  //   return a+b;
+  // }
+
+  console.log('olá');
+  
+  function createCounter(initialValue){
+    let COUNTER_VALUE = initialValue;
+    function add(x) {
+      COUNTER_VALUE = COUNTER_VALUE + x;
+    }
+
+    function log() {
+      console.log(COUNTER_VALUE);
+    }
+
+      return {
+        value: COUNTER_VALUE,
+        add: add,
+        log: log
+      };
+    }
+
+  const counter = createCounter(10);
+  console.log(counter);
+  counter.add(20);
+  counter.log();
