@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <!-- <div class="container">
     <h1>Basic calculator</h1>
     
     <input id="entrada-1" />
@@ -29,7 +29,47 @@
     <p id="resultado">
       
     </p>
+  </div> -->
+
+  <div class="main-container">
+
+    <div class="calc" id="calc">
+      <div class="first-line">
+        <button class="btn-clear key-config" id="btn-clear">C</button>
+        <div class="display" id="display">
+          <span class="display-text" id="display-text"></span>
+        </div>
+      </div>
+      <div class="second-line">
+
+        <div class="numbers-container" id="numbers-container">
+          <button class="number number-key key-config key-equals" id="btn-equals"> = </button>
+          <button class="number number-key key-config" id="dot-btn"> . </button>
+          <button class="number number-key key-config" id="btn-0">0</button>
+          <button class="number number-key key-config" id="btn-1">1</button>
+          <button class="number number-key key-config" id="btn-2">2</button>
+          <button class="number number-key key-config" id="btn-3">3</button>
+          <button class="number number-key key-config" id="btn-4">4</button>
+          <button class="number number-key key-config" id="btn-5">5</button>
+          <button class="number number-key key-config" id="btn-6">6</button>
+          <button class="number number-key key-config" id="btn-7">7</button>
+          <button class="number number-key key-config" id="btn-8">8</button>
+          <button class="number number-key key-config" id="btn-9">9</button>
+        </div>
+        <div class="op-container">
+          <button class="operators key-operators op-key" id="btn-div">/</button>
+          <button class="operators key-operators op-key" id="btn-mult">x</button>
+          <button class="operators key-operators op-key" id="btn-sub">-</button>
+          <button class="operators key-operators op-key" id="btn-sum">+</button>
+        </div>
+      </div>
+
+    </div>
   </div>
+
+
+
+
   <script src="./calculator.js"></script>
 </body>
 

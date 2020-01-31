@@ -1,4 +1,125 @@
-body {
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: monospace;
+}
+
+button {
+	border: 0;
+}
+
+.main-container {
+	margin: 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.calc {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	border-radius: 0.5em;
+	background-color: rgb(20, 20, 20);
+	color: #fff;
+}
+
+.first-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 4rem;
+}
+
+.display {
+	margin: 0.5em 0.5em 0.5em 0;
+	width: 70%;
+	border-radius: 0.5em;
+	background-color: rgb(184, 224, 146, 0.5) ;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.display-text {
+	width: 100%;
+	padding: 0.5rem 0.5rem;
+	text-align: right;
+	font-size: 1.2rem;
+}
+
+.key-config {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0.5em;
+	padding: 1em 0;
+	width: 25%;
+	color: #fff;
+	border-radius: 0.5em;
+	font-weight: 900;
+	background-color: rgb(44, 43, 43);
+}
+
+.key-equals {
+	background-color: rgb(228, 230, 231);
+	color: #000;
+}
+
+.btn-clear {
+	background-color: rgb(245, 184, 54);
+	color: #000;
+
+}
+
+.second-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.numbers-container {
+	width: 75%;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+}
+
+.op-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0.5em 0.5em 0.5em 0;
+	width: 25%;
+	border-radius: 0.5em;
+	background-color: rgb(44, 43, 43);
+}
+
+.op-key {
+	padding: 1em 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0.5em;
+	width: 80%;
+	border-radius: 0.5em;
+	font-weight: 900;
+	background-color: rgb(233, 113, 65);
+}
+
+
+
+
+
+
+
+
+/*body {
 	font: normal normal bold 1.5em "Lucida Sans Unicode";
 	margin: 0;
 	padding: 0;
@@ -51,4 +172,4 @@ button:active {
 
 button:focus, input:focus {
 	outline:none;
-}
+} */
