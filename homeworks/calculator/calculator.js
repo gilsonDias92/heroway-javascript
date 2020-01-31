@@ -14,7 +14,6 @@ btnClear.addEventListener("click", () => {
   inputValue2.value = " ";
 });
 
-
 const handlerOperation = fn => {
   fn();
 };
